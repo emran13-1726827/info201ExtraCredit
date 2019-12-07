@@ -19,7 +19,7 @@ shinyServer(function(input, output) {
     })
     output$distPlot <- renderPlot({
         d = data[[input$val]]
-        hist(as.numeric(d))
+        hist(as.numeric(d), col = c("Red"))
         # data %>% select(Temperature) %>% nth(1) %>% hist
         
 
