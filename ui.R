@@ -63,16 +63,24 @@ shinyUI(fluidPage(
             br(),
             h4("What, in short, do you conclude from your analysis? "),
             br(),
-            h5("In conclusion, "),
+            h5("From the analyses,I concluded that the temprature is lower for a higher frequency. So, the lower the x axis number the higher the frequency."),
         ),
         tabPanel(
             "Reflection and Code",
             titlePanel(
                 "Reflection on what I learned from the time series data"),
             br(),
-            h5("From this time series data, I learned that---- What questions do I have"),
+            h5("From this time series data, I learned that light has more frequency and humidy ratio was higher over time."),
+            h5("This raised a question about how they collected the data and were there other factors they had to account for. 
+               For example, where was the testing took place. Was it a clean air area. Thtoughout those years was there a significant change in the area."),
             br(),
-            h5("Code - Appendix"),
+            h4("Code - Appendix"),
+            h5("I made a UI and a Server. The purpose of the UI is so that I can add pages and tabs and allow the user to interact with the shiny app."),
+            h4("Source"),
+            withTags(b(a("Click here to go to go to the source website",
+                         href =
+                             "http://archive.ics.uci.edu/ml/datasets/Ozone+Level+Detection"
+            )))
         )
         )))
             
